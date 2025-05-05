@@ -30,7 +30,7 @@ body.dark {
 .container {
   max-width: 800px;
   margin: 0 auto;
-  padding: 30px 20px;
+  padding: 20px 20px 60px 20px;
   text-align: left;
 }
 
@@ -68,7 +68,7 @@ body.dark {
   flex-wrap: wrap;
   gap: 12px;
   margin-top: 10px;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 .link-sticker {
@@ -89,32 +89,13 @@ body.dark {
 }
 
 .memo-wall {
-  margin-top: 30px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-}
-
-.note {
-  background-color: #fff2f6;
-  border-left: 4px solid #f5a8c4;
-  padding: 10px 14px;
-  border-radius: 10px;
-  font-size: 14.5px;
-  color: #9b5074;
-  min-width: 180px;
-  max-width: 220px;
-  box-shadow: 0 2px 5px rgba(250, 200, 230, 0.15);
-}
-
-body.dark .note {
-  background-color: #2a2a2f;
-  border-left-color: #cc88aa;
-  color: #f3cfe0;
+  margin-top: 60px;
+  min-height: 150px;
 }
 
 .bgm-player {
-  margin-top: 30px;
+  margin: 30px auto;
+  max-width: 800px;
   background: #fff0f7;
   border: 1px dashed #eaa4c8;
   padding: 14px 20px;
