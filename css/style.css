@@ -133,3 +133,30 @@ body.dark .bgm-player {
   border-color: #b26e9f;
   color: #ffddf0;
 }
+
+footer {
+  position: relative;
+  bottom: 0;
+  margin-top: 80px;
+  padding: 20px 0 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--footer-bg, transparent);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.footer-container {
+  background-color: var(--box-bg);
+  padding: 12px 24px;
+  border-radius: 12px;
+  border: 1px dashed var(--border-color);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 640px;
+  width: 100%;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05);
+}
+
