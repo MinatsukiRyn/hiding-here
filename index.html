@@ -1,38 +1,40 @@
+
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>水无月凛 Minatsuki Ryn</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <div class="container">
-    <header class="header">
-      <div class="lang-switch">
-        <button class="lang-btn" onclick="location.href='index.html'">简体</button>
-        <button class="lang-btn" onclick="location.href='index-tw.html'">繁體</button>
-        <button class="lang-btn" onclick="location.href='index-en.html'">EN</button>
-      </div>
-      <div class="avatar-card">
-        <img src="assets/img/avatar.png" alt="水无月凛头像" class="avatar">
-        <div class="status">
-          <p>💬 心声：……谢谢你愿意点进来。</p>
-          <p>🩸 血量：100%</p>
-          <p>😰 社恐值：99 / 100</p>
-        </div>
-      </div>
-      <h1 class="intro">我是水无月凛。<br>谢谢你愿意进来。</h1>
-    </header>
+  <div class="language-switcher">
+    <button>简体</button>
+    <button>繁體</button>
+    <button>EN</button>
+  </div>
 
-    <main class="links">
-      <div class="link-card" onclick="window.open('https://twitch.tv/你的频道', '_blank')">
-        🎮 Twitch 直播间
+  <div class="container">
+    <div class="profile-header">
+      <div class="avatar-box">
+        <img src="assets/img/avatar.png" alt="头像" class="avatar"/>
       </div>
-      <div class="link-card" onclick="location.href='ai-character.html'">
-        🤖 我的AI角色介绍
+      <div class="status-box">
+        <p class="status-line">💬 心声：……谢谢你愿意点进来。</p>
+        <p class="status-line">🩸 血量：100%</p>
+        <p class="status-line">🥲 社恐值：99 / 100</p>
       </div>
-    </main>
+    </div>
+
+    <div class="intro-box">
+      我是水无月凛……<br/>
+      谢谢你愿意进来。
+    </div>
+
+    <div class="link-stickers">
+      <a href="https://www.twitch.tv/your_twitch_channel" class="link-sticker">🎮 Twitch 直播间</a>
+      <a href="ai-character.html" class="link-sticker">🤖 我的AI角色介绍</a>
+    </div>
   </div>
 </body>
 </html>
