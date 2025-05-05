@@ -5,6 +5,9 @@ body {
   background: linear-gradient(to bottom right, #fff8fb, #f0fcff);
   color: #444;
   transition: background 0.4s ease, color 0.3s ease;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 body.dark {
@@ -30,8 +33,9 @@ body.dark {
 .container {
   max-width: 800px;
   margin: 0 auto;
-  padding: 20px 20px 60px 20px;
+  padding: 20px 20px 40px 20px;
   text-align: left;
+  flex: 1;
 }
 
 .top-section {
@@ -89,19 +93,39 @@ body.dark {
 }
 
 .memo-wall {
-  margin-top: 60px;
-  min-height: 150px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 0 auto 30px auto;
+  justify-content: flex-start;
+}
+
+.memo-item {
+  background-color: #fff1f7;
+  padding: 10px 16px;
+  border-radius: 10px;
+  border: 1px solid #ffc8e1;
+  font-size: 14px;
+  color: #cc6699;
+  box-shadow: 0 2px 5px rgba(240, 180, 210, 0.2);
+}
+
+footer.bgm-footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
 }
 
 .bgm-player {
-  margin: 30px auto;
-  max-width: 800px;
   background: #fff0f7;
   border: 1px dashed #eaa4c8;
   padding: 14px 20px;
   border-radius: 12px;
   font-size: 15px;
   color: #a14f72;
+  width: 100%;
+  max-width: 800px;
 }
 
 body.dark .bgm-player {
