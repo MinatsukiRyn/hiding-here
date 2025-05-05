@@ -1,33 +1,44 @@
-
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MinatsukiRyn | hiding-here</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>水无月凛 Minatsuki Ryn</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <main class="container">
-    <section class="profile">
-      <img src="avatar.png" alt="头像" class="avatar" />
-      <div class="status">
-        <p>🗨️ 心声：谢谢你愿意点进来。</p>
-        <p>💉 血量：100%</p>
-        <p>😳 社恐值：99 / 100</p>
+  <div class="theme-toggle">
+    <button onclick="document.body.classList.toggle('dark')">🌙 夜间模式</button>
+  </div>
+
+  <div class="container">
+    <div class="top-section">
+      <img src="assets/img/avatar.png" alt="头像" class="avatar-small"/>
+      <div class="status-small-box">
+        <p class="status-line">💬 心声：谢谢你愿意点进来。</p>
+        <p class="status-line">🩸 血量：100%</p>
+        <p class="status-line">🥲 社恐值：99 / 100</p>
       </div>
-    </section>
-    <section class="buttons">
-      <a href="https://twitch.tv/" target="_blank" class="btn">🎮 Twitch 直播间</a>
-      <a href="#" class="btn">🤖 我的AI角色介绍</a>
-    </section>
-    <section class="memo-wall">
-      <div class="memo">🕯️ …安静的夜晚特别想听歌。</div>
-    </section>
-  </main>
-  <footer class="footer-player">
-    <p>🎵 当前播放：A place to find you</p>
-    <audio controls autoplay loop src="music/aplacetofindyou.mp3"></audio>
+    </div>
+
+    <div class="link-stickers">
+      <a href="https://www.twitch.tv/your_twitch_channel" class="link-sticker" target="_blank" rel="noopener noreferrer">🎮 Twitch 直播间</a>
+      <a href="ai-character.html" class="link-sticker">🤖 我的AI角色介绍</a>
+    </div>
+
+    <div class="memo-wall">
+      <div class="memo-item">🕯️ ...安静的夜晚特别想听歌。</div>
+    </div>
+  </div>
+
+  <footer class="bgm-footer">
+    <div class="bgm-player">
+      🎵 当前播放：<span class="track-title">A place to find you</span>
+      <audio controls autoplay>
+        <source src="music/aplacetofindyou.mp3" type="audio/mpeg">
+        您的浏览器不支持音频播放。
+      </audio>
+    </div>
   </footer>
 </body>
 </html>
